@@ -1,11 +1,8 @@
 pipeline {
-
+    agent any
   environment {
     DOCKER_IMAGE_NAME = "tunuofmrec/myweb"
       }
-
-  agent any
-
   stages {
 
     stage('Checkout Source') {
@@ -38,11 +35,10 @@ pipeline {
     stage('Deploy App') {
       steps {
         script {
-          kubernetesDeploy(configs: "myweb.yaml", kubeconfigId: "mykubeconfig")
+          kubernetesDeploy(configs: "myweb.yaml", kubeconfigId: "kubeconfig")
         }
       }
     }
 
   }
-
-
+  }
