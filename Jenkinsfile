@@ -2,8 +2,7 @@ pipeline {
 
   environment {
     DOCKER_IMAGE_NAME = "tunuofmrec/myweb"
-    
-  }
+      }
 
   agent any
 
@@ -46,4 +45,4 @@ pipeline {
 
   }
 
-}
+
