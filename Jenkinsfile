@@ -1,7 +1,7 @@
 pipeline {
 
   environment {
-    DOCKER_IMAGE_NAME = "tunuofmrec/train-schedule"
+    DOCKER_IMAGE_NAME = "tunuofmrec/myweb"
     
   }
 
